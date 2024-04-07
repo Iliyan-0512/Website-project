@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    /* border-right:1px solid #bbb; */
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active), .active {
+    background-color: #04AA6D;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    flex-basis: calc(25% - 20px);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    /* border-bottom: 1px solid #ccc; */
+}
+
+.item p {
+    padding: 10px;
+    margin: 0;
+}
+
+.foother {
+    background-color: #323732;
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+	
+}
+.container {
+    display: flex;
+    align-items: flex-start; /* Adjust vertical alignment as needed */
+    padding: 40px;
+}
+
+.images {
+    flex: 1; /* Adjust based on your preference for image width vs text width */
+    text-align: center; /* Center the images if they are smaller than the div width */
+    margin-right: 58px;
+}
+
+.images img {
+   
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px; /* Spacing between images */
+}
+
+.text {
+    flex: 2; /* Adjust based on your preference */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.box {
+    background: #f0f0f0; /* Light grey background */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px; /* Spacing between paragraphs */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .images, .text {
+        flex: none;
+        width: 100%;
+    }
+}
+	 
