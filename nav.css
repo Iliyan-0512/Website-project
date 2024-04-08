@@ -81,6 +81,7 @@ li a:hover:not(.active), .active {
     flex: 1; /* Adjust based on your preference for image width vs text width */
     text-align: center; /* Center the images if they are smaller than the div width */
     margin-right: 58px;
+    
 }
 
 .images img {

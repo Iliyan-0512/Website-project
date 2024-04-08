@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-section {
+    flex: 1; /* Allows the text section to flexibly take up half of the container space */
+    padding: 20px;
+    margin-right: 20px; /* Adds some space between the text section and the image section */
+    background-color: #f8f8f8; /* Light background color for the text section */
+    border-radius: 8px; /* Slightly rounded corners for a softer look */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    max-width: 600px; /* Limits the maximum width of the text block */
+}
+
+.text-section h1 {
+    margin-bottom: 16px; /* Adds space below the heading */
+    color: #333; /* Dark grey color for the text for better readability */
+    font-size: 45px;
+    text-align: center;
+}
+
+.text-section p {
+    font-size: 26px; /* Reasonable font size for readability */
+    line-height: 2; /* Improves readability by increasing line height */
+    color: #555; /* Slightly lighter color for the paragraph text */
+}
+
+.image-section {
+    flex: 1; /* Allows the image section to take up the other half of the container space */
+    text-align: center; /* Centers the image */
+    padding: 20px;
+}
+
+.image-section img {
+    max-width: 100%; /* Ensures the image is responsive and doesn't overflow its container */
+    height: auto; /* Keeps the image aspect ratio */
+    border-radius: 8px; /* Slightly rounded corners for the image */
+}
