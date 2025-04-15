@@ -26,32 +26,50 @@ html, body {
   }
   .container-left
   {
-        position: absolute;
-    
-        margin-left: 50px;
-        line-height: 1.5em;
-    
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: 20px;
-        border-radius: 10px;
-    
-        text-align: justify;
-        width: 90%;
-        max-width: 600px;
-    }
-    .container-right
-    {
-          position: absolute;
-      
-          margin-right: 150px;
-          margin-left: 750px;
-          line-height: 1.5em;
-      
-          background-color: rgba(255, 255, 255, 0.8);
-          padding: 20px;
-          border-radius: 10px;
-      
-          text-align: justify;
-          width: 90%;
-          max-width: 600px;
-      }
+    position: relative;
+    line-height: 1.5em;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: justify;
+    width: 70%;
+    max-width: 600px;
+   
+  }
+.container-right {
+  position: relative;
+  line-height: 1.5em;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: justify;
+  width: 70%;
+  max-width: 600px;
+  
+  
+}
+.text-containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  
+}
+.video-index
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.video-slavi
+{
+  position: relative;
+  margin: 40px auto;
+  width: fit-content;
+}
+.video-belogratSkali {
+  position: relative;
+  margin: 40px auto;
+  width: fit-content;
+}
